@@ -1,0 +1,144 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3178,        134]
+NotebookOptionsPosition[      2502,        104]
+NotebookOutlinePosition[      2855,        120]
+CellTagsIndexPosition[      2812,        117]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Variation of Parameters", "Title"],
+
+Cell[CellGroupData[{
+
+Cell["Author", "Subsection"],
+
+Cell["\<\
+Eric W. Weisstein
+March 12, 2009\
+\>", "Text"],
+
+Cell[TextData[{
+ "This notebook downloaded from ",
+ ButtonBox["http://mathworld.wolfram.com/notebooks/DifferentialEquations/\
+VariationofParameters.nb",
+  BaseStyle->"Hyperlink",
+  ButtonData:>{
+    URL["http://mathworld.wolfram.com/notebooks/DifferentialEquations/\
+VariationofParameters.nb"], None}],
+ "."
+}], "Text"],
+
+Cell[TextData[{
+ "For more information, see Eric's ",
+ StyleBox["MathWorld",
+  FontSlant->"Italic"],
+ " entry ",
+ ButtonBox["http://mathworld.wolfram.com/VariationofParameters.html",
+  BaseStyle->"Hyperlink",
+  ButtonData:>{
+    URL["http://mathworld.wolfram.com/VariationofParameters.html"], None}],
+ "."
+}], "Text"],
+
+Cell["\<\
+\[Copyright]2009 Wolfram Research, Inc. except for portions noted otherwise\
+\>", "Text"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Solve", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"v1p", " ", "y1p"}], "+", 
+       RowBox[{"v2p", " ", "y2p"}]}], "\[Equal]", "g"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"v1p", " ", "y1"}], "+", 
+       RowBox[{"v2p", " ", "y2"}]}], "\[Equal]", "0"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"v1p", ",", "v2p"}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"v1p", "\[Rule]", 
+     FractionBox[
+      RowBox[{"g", " ", "y2"}], 
+      RowBox[{
+       RowBox[{"y1p", " ", "y2"}], "-", 
+       RowBox[{"y1", " ", "y2p"}]}]]}], ",", 
+    RowBox[{"v2p", "\[Rule]", 
+     FractionBox[
+      RowBox[{"g", " ", "y1"}], 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "y1p"}], " ", "y2"}], "+", 
+       RowBox[{"y1", " ", "y2p"}]}]]}]}], "}"}], "}"}]], "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 40, 0, 92, "Title"],
+Cell[CellGroupData[{
+Cell[644, 26, 28, 0, 44, "Subsection"],
+Cell[675, 28, 56, 3, 49, "Text"],
+Cell[734, 33, 319, 9, 68, "Text"],
+Cell[1056, 44, 317, 10, 49, "Text"],
+Cell[1376, 56, 99, 2, 30, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1512, 63, 24, 0, 80, "Section"],
+Cell[CellGroupData[{
+Cell[1561, 67, 429, 14, 28, "Input"],
+Cell[1993, 83, 469, 16, 50, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
